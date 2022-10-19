@@ -1,3 +1,4 @@
+/* Step 1 */
 #logo {
     width: 475px;
     animation: hw5_move 5s;
@@ -8,12 +9,14 @@
     to {width: 475px;}
 }
 
+/* Step 14 */
 @media (prefers-reduced-motion) {
     #logo {
         animation: none;
     }
 } 
 
+/* Step 2 */
 body {
     font-family: 'Poppins', serif;
     background-color: #d1d1d1;
@@ -21,12 +24,14 @@ body {
 
 }
 
+/* Step 3 */
 header{
     display: flex;
     flex-direction: colomn;
     align-items: center;
 }
 
+/* Step 6 */
 .card > header {
     background: #288088;
     border: 2px solid #45ADAD;
@@ -34,16 +39,19 @@ header{
     padding: 20px 0 20px 0;
 }
 
+/* Step 4 */
 .nav_links {
     display: flex;
     flex-direction: column;
 }
 
+/* Step 5 Challenge */
 a:visited {
     color: blue;
     text-decoration: underline;
 }
 
+/* Step 7 */
 .card {
     display: flex;
     flex-direction: column;
@@ -51,6 +59,7 @@ a:visited {
     border-radius: 50px 50px 0px 0px;
 }
 
+/* Step 8 */
 .pricing {
     display: flex;
     flex-wrap: wrap;
@@ -59,19 +68,23 @@ a:visited {
     align-items: center;
 }
 
+/* Step 9 */
 .gallery > img {
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
 }
 
+/* Step 10 */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Step 11 */
 @media screen and (min-width: 900px){
+    /* Step 11 */
     header{
         display: flex;
         flex-direction: row;
@@ -82,28 +95,38 @@ a:visited {
         flex-direction: row;
     }
 
+    /* Step 12*/
+    .pricing{
+        align-items: center;
+    }
+
     .card{
         flex-basis: 275px;
     }
 
+    /* Step 13 */
     body > header {
         position: sticky;
         top: 0;
     }
 }
 
-@media (prefers-reduced-motion: reduce){
+/* Step 14 */
+@media screen and (prefers-reduced-motion: reduce){
     #logo{
         animation: none;
     }
 }
 
+/* Step 15 */
 @media print{
+    /* Step 15 and Step 16 */
     body{
         font-family: arial, helvetica;
         background-image: none;
     }
 
+    /* Step 17 */
     nav{
         width: 100%
     }
@@ -113,11 +136,13 @@ a:visited {
         justify-content: space-around;
     }
 
+    /* Step 18 */
     .pricing{
         flex-wrap: nowrap;
         align-items: flex-end;
     }
 
+    /* Step 19 */
     .card{
         border: 2px solid #45ADDD;
         flex-basis: 325px;
@@ -127,10 +152,12 @@ a:visited {
         display: none;
     }
 
+    /* Step 20 */
     #gallery{
         display: none;
     }
 
+    /* Step 21 */
     .card ul li:nth-child(2)::after{
         content: "\1F44D";
     }
